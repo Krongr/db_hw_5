@@ -42,7 +42,7 @@ JOIN singer_genre_pair sgp ON sl.id = sgp.singer_id
 SELECT tl.track_name
 FROM track_list tl
 LEFT JOIN track_collection_pair tcp ON tl.id = tcp.track_id 
-	WHERE tcp.track_id IS NULL
+	WHERE tcp.track_id IS NULL;
 
 SELECT sl.singer_name
 FROM singer_list sl 
